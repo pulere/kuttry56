@@ -1,0 +1,492 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local GuiTitle = Instance.new("TextLabel")
+local Options = Instance.new("Frame")
+local Option1 = Instance.new("TextButton")
+local Option2 = Instance.new("TextButton")
+local Option3 = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local MadeBy = Instance.new("TextLabel")
+local PrisonLife = Instance.new("Frame")
+local GuiTitle_2 = Instance.new("TextLabel")
+local Close2 = Instance.new("TextButton")
+local INMATE = Instance.new("TextButton")
+local GUARD = Instance.new("TextButton")
+local CRIMINAL = Instance.new("TextButton")
+local KillAll = Instance.new("TextButton")
+local ObGuns = Instance.new("TextButton")
+local TazerBypass = Instance.new("TextButton")
+local Btools = Instance.new("TextButton")
+local RemoveDoors = Instance.new("TextButton")
+local info = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Close1 = Instance.new("TextButton")
+local ComingSoon = Instance.new("Frame")
+local Words = Instance.new("TextLabel")
+local Close3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(137, 97, 255)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.231683165, 0, 0.0881057233, 0)
+Main.Size = UDim2.new(0, 526, 0, 374)
+Main.Visible = false
+
+GuiTitle.Name = "GuiTitle"
+GuiTitle.Parent = Main
+GuiTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiTitle.BackgroundTransparency = 1.000
+GuiTitle.Size = UDim2.new(0, 526, 0, 42)
+GuiTitle.Font = Enum.Font.SourceSans
+GuiTitle.Text = "Extra Extra HUB"
+GuiTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiTitle.TextScaled = true
+GuiTitle.TextSize = 14.000
+GuiTitle.TextWrapped = true
+
+Options.Name = "Options"
+Options.Parent = Main
+Options.BackgroundColor3 = Color3.fromRGB(130, 80, 255)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0, 0, 0.112299465, 0)
+Options.Size = UDim2.new(0, 60, 0, 332)
+
+Option1.Name = "Option1"
+Option1.Parent = Options
+Option1.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Option1.BorderSizePixel = 0
+Option1.Size = UDim2.new(0, 60, 0, 50)
+Option1.Font = Enum.Font.SourceSans
+Option1.Text = "Prison life"
+Option1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Option1.TextSize = 16.000
+Option1.MouseButton1Down:connect(function()
+	PrisonLife.Visible = true
+	Main.Visible = false
+end)
+
+Option2.Name = "Option2"
+Option2.Parent = Options
+Option2.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Option2.BorderSizePixel = 0
+Option2.Position = UDim2.new(0, 0, 0.177710846, 0)
+Option2.Size = UDim2.new(0, 60, 0, 50)
+Option2.Font = Enum.Font.SourceSans
+Option2.Text = "Comming soon"
+Option2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Option2.TextScaled = true
+Option2.TextSize = 16.000
+Option2.TextWrapped = true
+Option2.MouseButton1Down:connect(function()
+	ComingSoon.Visible = true
+	Main.Visible = false
+end)
+
+Option3.Name = "Option3"
+Option3.Parent = Options
+Option3.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Option3.BorderSizePixel = 0
+Option3.Position = UDim2.new(0, 0, 0.361445785, 0)
+Option3.Size = UDim2.new(0, 60, 0, 50)
+Option3.Font = Enum.Font.SourceSans
+Option3.Text = "Comming sonn"
+Option3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Option3.TextScaled = true
+Option3.TextSize = 16.000
+Option3.TextWrapped = true
+Option3.MouseButton1Down:connect(function()
+	ComingSoon.Visible = true
+	Main.Visible = false
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.325095057, 0, 0.163101599, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 30.000
+Credits.TextWrapped = true
+
+MadeBy.Name = "MadeBy"
+MadeBy.Parent = Main
+MadeBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MadeBy.BackgroundTransparency = 1.000
+MadeBy.Position = UDim2.new(0.325095057, 0, 0.489304841, 0)
+MadeBy.Size = UDim2.new(0, 200, 0, 90)
+MadeBy.Font = Enum.Font.SourceSans
+MadeBy.Text = "MADE BY SUMMERCOOL299"
+MadeBy.TextColor3 = Color3.fromRGB(0, 0, 0)
+MadeBy.TextScaled = true
+MadeBy.TextSize = 14.000
+MadeBy.TextWrapped = true
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = ScreenGui
+PrisonLife.BackgroundColor3 = Color3.fromRGB(137, 97, 255)
+PrisonLife.BorderSizePixel = 0
+PrisonLife.Position = UDim2.new(0.231999993, 0, 0.0879999995, 0)
+PrisonLife.Size = UDim2.new(0, 526, 0, 374)
+PrisonLife.Visible = false
+
+GuiTitle_2.Name = "GuiTitle"
+GuiTitle_2.Parent = PrisonLife
+GuiTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiTitle_2.BackgroundTransparency = 1.000
+GuiTitle_2.Size = UDim2.new(0, 526, 0, 42)
+GuiTitle_2.Font = Enum.Font.SourceSans
+GuiTitle_2.Text = "Extra Extra HUB"
+GuiTitle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+GuiTitle_2.TextScaled = true
+GuiTitle_2.TextSize = 14.000
+GuiTitle_2.TextWrapped = true
+
+Close2.Name = "Close2"
+Close2.Parent = PrisonLife
+Close2.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Close2.BorderSizePixel = 0
+Close2.Position = UDim2.new(0.927756667, 0, 0, 0)
+Close2.Size = UDim2.new(0, 37, 0, 34)
+Close2.Font = Enum.Font.SourceSans
+Close2.Text = "X"
+Close2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close2.TextScaled = true
+Close2.TextSize = 14.000
+Close2.TextWrapped = true
+Close2.MouseButton1Down:connect(function()
+	PrisonLife.Visible = false
+	Main.Visible = true
+end)
+
+INMATE.Name = "INMATE"
+INMATE.Parent = PrisonLife
+INMATE.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+INMATE.BorderSizePixel = 0
+INMATE.Position = UDim2.new(0, 0, 0.192513362, 0)
+INMATE.Size = UDim2.new(0, 120, 0, 39)
+INMATE.Font = Enum.Font.SourceSans
+INMATE.Text = "INMATE"
+INMATE.TextColor3 = Color3.fromRGB(0, 0, 0)
+INMATE.TextScaled = true
+INMATE.TextSize = 14.000
+INMATE.TextWrapped = true
+INMATE.MouseButton1Down:connect(function()
+	Workspace.Remote.TeamEvent:FireServer("Bright orange")
+
+end)
+
+GUARD.Name = "GUARD"
+GUARD.Parent = PrisonLife
+GUARD.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+GUARD.BorderSizePixel = 0
+GUARD.Position = UDim2.new(0.385931551, 0, 0.192513362, 0)
+GUARD.Size = UDim2.new(0, 120, 0, 39)
+GUARD.Font = Enum.Font.SourceSans
+GUARD.Text = "GUARD"
+GUARD.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUARD.TextScaled = true
+GUARD.TextSize = 14.000
+GUARD.TextWrapped = true
+GUARD.MouseButton1Down:connect(function()
+	Workspace.Remote.TeamEvent:FireServer("Bright blue")
+
+end)
+
+CRIMINAL.Name = "CRIMINAL"
+CRIMINAL.Parent = PrisonLife
+CRIMINAL.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+CRIMINAL.BorderSizePixel = 0
+CRIMINAL.Position = UDim2.new(0.771863103, 0, 0.192513362, 0)
+CRIMINAL.Size = UDim2.new(0, 120, 0, 39)
+CRIMINAL.Font = Enum.Font.SourceSans
+CRIMINAL.Text = "CRIMINAL"
+CRIMINAL.TextColor3 = Color3.fromRGB(0, 0, 0)
+CRIMINAL.TextScaled = true
+CRIMINAL.TextSize = 14.000
+CRIMINAL.TextWrapped = true
+CRIMINAL.MouseButton1Down:connect(function()
+	LCS = game.Workspace["Criminals Spawn"].SpawnLocation
+
+	LCS.CanCollide = false
+	LCS.Size = Vector3.new(51.05, 24.12, 54.76)
+	LCS.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	LCS.Transparency = 1
+	wait(0.5)
+	LCS.CFrame = CFrame.new(-920.510803, 92.2271957, 2138.27002, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	LCS.Size = Vector3.new(6, 0.2, 6)
+	LCS.Transparency = 0
+
+end)
+
+
+KillAll.Name = "KillAll"
+KillAll.Parent = PrisonLife
+KillAll.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+KillAll.BorderSizePixel = 0
+KillAll.Position = UDim2.new(0, 0, 0.385026723, 0)
+KillAll.Size = UDim2.new(0, 120, 0, 39)
+KillAll.Font = Enum.Font.SourceSans
+KillAll.Text = "Kill All"
+KillAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAll.TextScaled = true
+KillAll.TextSize = 14.000
+KillAll.TextWrapped = true
+KillAll.MouseButton1Down:connect(function()
+	workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+
+	game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)    
+
+	wait(0.5)
+	function kill(a)
+		local A_1 =
+			{
+				[1] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-391.152252, 8.65560055, -83.2166901)),
+					["Distance"] = 3.2524313926697,
+					["Cframe"] = CFrame.new(840.310791, 101.334137, 2267.87988, 0.0636406094, 0.151434347, -0.986416459, 0, 0.988420188, 0.151741937, 0.997972965, -0.00965694897, 0.0629036576),
+					["Hit"] = a.Character.Head
+				},
+				[2] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-392.481476, -8.44939327, -76.7261353)),
+					["Distance"] = 3.2699294090271,
+					["Cframe"] = CFrame.new(840.290466, 101.184189, 2267.93506, 0.0964837447, 0.0589403138, -0.993587971, 4.65661287e-10, 0.998245299, 0.0592165813, 0.995334625, -0.00571343815, 0.0963144377),
+					["Hit"] = a.Character.Head
+				},
+				[3] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-389.21701, -2.50536323, -92.2163162)),
+					["Distance"] = 3.1665518283844,
+					["Cframe"] = CFrame.new(840.338867, 101.236496, 2267.80371, 0.0166504811, 0.0941716284, -0.995416701, 1.16415322e-10, 0.995554805, 0.0941846818, 0.999861419, -0.00156822044, 0.0165764652),
+					["Hit"] = a.Character.Head
+				},
+				[4] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-393.353973, 3.13988972, -72.5452042)),
+					["Distance"] = 3.3218522071838,
+					["Cframe"] = CFrame.new(840.277222, 101.285957, 2267.9707, 0.117109694, 0.118740402, -0.985994935, -1.86264515e-09, 0.992826641, 0.119563118, 0.993119001, -0.0140019981, 0.116269611),
+					["Hit"] = a.Character.Head
+				},
+				[5] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-390.73172, 3.2097764, -85.5477524)),
+					["Distance"] = 3.222757101059,
+					["Cframe"] = CFrame.new(840.317993, 101.286423, 2267.86035, 0.0517584644, 0.123365127, -0.991010666, 0, 0.992340803, 0.123530701, 0.99865967, -0.00639375951, 0.0513620302),
+					["Hit"] = a.Character.Head
+				}
+			}
+		local A_2 = game.Players.LocalPlayer.Backpack["Remington 870"]
+		local Event = game:GetService("ReplicatedStorage").ShootEvent
+		Event:FireServer(A_1, A_2)
+		Event:FireServer(A_1, A_2)
+	end
+
+	for i,v in pairs(game.Players:GetChildren())do
+		if v.Name ~= game.Players.LocalPlayer.Name then
+			kill(v)
+		end
+	end
+	wait(1)
+	workspace.Remote.TeamEvent:FireServer("Bright orange")
+
+
+end)
+
+ObGuns.Name = "ObGuns"
+ObGuns.Parent = PrisonLife
+ObGuns.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+ObGuns.BorderSizePixel = 0
+ObGuns.Position = UDim2.new(0.385931551, 0, 0.385026723, 0)
+ObGuns.Size = UDim2.new(0, 120, 0, 39)
+ObGuns.Font = Enum.Font.SourceSans
+ObGuns.Text = "Get All Guns"
+ObGuns.TextColor3 = Color3.fromRGB(0, 0, 0)
+ObGuns.TextScaled = true
+ObGuns.TextSize = 14.000
+ObGuns.TextWrapped = true
+ObGuns.MouseButton1Down:connect(function()
+	for i,v in pairs(Workspace.Prison_ITEMS.giver:GetChildren()) do
+
+		OwO = Workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+	end
+end)
+
+TazerBypass.Name = "TazerBypass"
+TazerBypass.Parent = PrisonLife
+TazerBypass.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+TazerBypass.BorderSizePixel = 0
+TazerBypass.Position = UDim2.new(0.769962013, 0, 0.385026723, 0)
+TazerBypass.Size = UDim2.new(0, 120, 0, 39)
+TazerBypass.Font = Enum.Font.SourceSans
+TazerBypass.Text = "Tazer Bypass"
+TazerBypass.TextColor3 = Color3.fromRGB(0, 0, 0)
+TazerBypass.TextScaled = true
+TazerBypass.TextSize = 14.000
+TazerBypass.TextWrapped = true
+TazerBypass.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.ClientInputHandler.Disabled = true
+	game.Players.LocalPlayer.CharacterAdded:connect(function()
+		game.Workspace:WaitForChild(game.Players.LocalPlayer.Name)
+		game.Players.LocalPlayer.Character.ClientInputHandler.Disabled = true
+	end)
+
+end)
+
+Btools.Name = "Btools"
+Btools.Parent = PrisonLife
+Btools.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Btools.BorderSizePixel = 0
+Btools.Position = UDim2.new(-0.00190109015, 0, 0.585561514, 0)
+Btools.Size = UDim2.new(0, 120, 0, 39)
+Btools.Font = Enum.Font.SourceSans
+Btools.Text = "Btools"
+Btools.TextColor3 = Color3.fromRGB(0, 0, 0)
+Btools.TextScaled = true
+Btools.TextSize = 14.000
+Btools.TextWrapped = true
+Btools.MouseButton1Click:connect(function()
+	wait(0.1)
+	local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	tool1.BinType = "Clone"
+	tool2.BinType = "Hammer"
+	tool3.BinType = "Grab"
+end)
+
+RemoveDoors.Name = "RemoveDoors"
+RemoveDoors.Parent = PrisonLife
+RemoveDoors.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+RemoveDoors.BorderSizePixel = 0
+RemoveDoors.Position = UDim2.new(0.384030461, 0, 0.582887709, 0)
+RemoveDoors.Size = UDim2.new(0, 120, 0, 39)
+RemoveDoors.Font = Enum.Font.SourceSans
+RemoveDoors.Text = "Remove Doors"
+RemoveDoors.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveDoors.TextScaled = true
+RemoveDoors.TextSize = 14.000
+RemoveDoors.TextWrapped = true
+RemoveDoors.MouseButton1Down:connect(function()
+	Workspace.Prison_Cellblock.doors:Destroy()
+
+	for i,v in pairs(workspace:GetChildren())do
+		if v.Name == "Doors" then
+			v:Destroy()
+		end
+	end
+end)
+
+info.Name = "info"
+info.Parent = ScreenGui
+info.BackgroundColor3 = Color3.fromRGB(137, 97, 255)
+info.Position = UDim2.new(0.479495257, 0, 0.343612343, 0)
+info.Size = UDim2.new(0, 100, 0, 143)
+info.Visible = true
+
+TextLabel.Parent = info
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.391608387, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 87)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Press E to open/close the gui :)"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Close1.Name = "Close1"
+Close1.Parent = info
+Close1.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Close1.Size = UDim2.new(0, 100, 0, 56)
+Close1.Font = Enum.Font.SourceSans
+Close1.Text = "CLOSE"
+Close1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close1.TextScaled = true
+Close1.TextSize = 14.000
+Close1.TextWrapped = true
+Close1.MouseButton1Down:connect(function()
+	info.Visible = false
+end)
+
+ComingSoon.Name = "ComingSoon"
+ComingSoon.Parent = ScreenGui
+ComingSoon.BackgroundColor3 = Color3.fromRGB(137, 97, 255)
+ComingSoon.BorderSizePixel = 0
+ComingSoon.Position = UDim2.new(0.343848586, 0, 0.169603512, 0)
+ComingSoon.Size = UDim2.new(0, 365, 0, 299)
+ComingSoon.Visible = false
+
+Words.Name = "Words"
+Words.Parent = ComingSoon
+Words.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Words.BackgroundTransparency = 1.000
+Words.Size = UDim2.new(0, 365, 0, 299)
+Words.Font = Enum.Font.SourceSans
+Words.Text = "THIS OPTION IS COMING SOON!!!"
+Words.TextColor3 = Color3.fromRGB(0, 0, 0)
+Words.TextScaled = true
+Words.TextSize = 14.000
+Words.TextWrapped = true
+
+Close3.Name = "Close3"
+Close3.Parent = ComingSoon
+Close3.BackgroundColor3 = Color3.fromRGB(120, 23, 255)
+Close3.BorderSizePixel = 0
+Close3.Position = UDim2.new(0.897619665, 0, 0, 0)
+Close3.Size = UDim2.new(0, 37, 0, 34)
+Close3.Font = Enum.Font.SourceSans
+Close3.Text = "X"
+Close3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close3.TextScaled = true
+Close3.TextSize = 14.000
+Close3.TextWrapped = true
+Close3.MouseButton1Down:connect(function()
+	ComingSoon.Visible = false
+	Main.Visible = true
+end)
+
+-- Scripts:
+
+local function CAZVJ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	p = game.Players.LocalPlayer
+	mouse = p:GetMouse()
+	
+	mouse.KeyDown:connect(function(key)
+		if key == "e" then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+			else
+				script.Parent.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(CAZVJ_fake_script)()
+local function JIECRH_fake_script() -- ScreenGui.Draggable 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	Main = script.Parent.Main
+	Main.Draggable = true
+	Main.Active = true
+	Main.Selectable = true
+	-- Prison life
+	PrisonLife = script.Parent.PrisonLife
+	PrisonLife.Draggable = true
+	PrisonLife.Active = true
+	PrisonLife.Selectable = true
+end
+coroutine.wrap(JIECRH_fake_script)()
